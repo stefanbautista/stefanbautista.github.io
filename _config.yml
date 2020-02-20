@@ -13,17 +13,23 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Last Volume
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  The Last Volume
+title:              "Last Volume"
+description:        "A blog"
+author_name:        "SB" # change this to your name
+logo_url:           https://avatars0.githubusercontent.com/u/13794983?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://lastvolu.me" # the base hostname & protocol for your site, e.g. http://example.com
+mathjax:            true  # enables support for mathjax - set to 'false' to disable
+
 
 # Build settings
-markdown: kramdown
+highlighter:        rouge
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
 theme: minima
 plugins:
   - jekyll-feed
